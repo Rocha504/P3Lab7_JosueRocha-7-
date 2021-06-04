@@ -1,4 +1,8 @@
 #include "SombreroClasificador.h"
+#include <iostream>
+using std::endl;
+using std::cout;
+using std::cin;
 #include <typeinfo>
 #include <vector>
 using std::vector;
@@ -36,7 +40,7 @@ ClaseHogwarts* SombreroClasificador:: clasificar_magos_nuevos(vector<Mago*> mago
 				magos_gryffindor.push_back(dynamic_cast<MagoGryffindor*>(magos[i]));
 		}
 	}
-	ClaseHogwarts* Clase=new ClaseHogwarts(magos_slytherin,magos_hufflepuff,magos_gryffindor,magos_ravenclaw);
+	ClaseHogwarts* Clase=new ClaseHogwarts(magos_slytherin,magos_hufflepuff,magos_gryffindor,magos_ravenclaw,year);
 	
 	return Clase;
 	

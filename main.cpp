@@ -7,6 +7,8 @@ using std::cin;
 #include "MagoRavenclaw.h"
 #include "MagoGryffindor.h"
 #include "MagoHufflepuff.h"
+#include "ClaseHogwarts.h"
+#include "SombreroClasificador.h"
 #include <vector>
 using std::vector;
 #include <stdlib.h>     
@@ -15,6 +17,13 @@ using std::vector;
 vector <Mago*> generar();
 
 int main(int argc, char** argv) {
+	SombreroClasificador* sombrerito=new SombreroClasificador();
+	vector<Mago*> lista=generar();
+	int year;
+	cout<<"Ingrese el año en el que se creo la clase"<<endl;
+	cin>>year;
+	ClaseHogwarts* clase=sombrerito->clasificar_magos_nuevos(lista,year);
+	
 	
 	
 	return 0;

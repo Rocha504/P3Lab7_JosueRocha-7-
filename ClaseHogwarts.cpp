@@ -9,12 +9,12 @@ using std::vector;
 ClaseHogwarts::ClaseHogwarts()
 {
 }
-ClaseHogwarts::ClaseHogwarts(vector <MagoSlytherin*> ms,vector <MagoHufflepuff*> mh ,	vector <MagoGryffindor*> mg ,vector <MagoRavenclaw*> mr){
+ClaseHogwarts::ClaseHogwarts(vector <MagoSlytherin*> ms,vector <MagoHufflepuff*> mh ,	vector <MagoGryffindor*> mg ,vector <MagoRavenclaw*> mr,int year){
 	this->magos_slytherin=ms;
 	this->magos_gryffindor=mg;
 	this->magos_hufflepuff=mh;
 	this->magos_ravenclaw=mr;
-	this->year=2002;
+	this->year=year;
 }
 void ClaseHogwarts :: promedio_habilidades_por_casa(){
 	
