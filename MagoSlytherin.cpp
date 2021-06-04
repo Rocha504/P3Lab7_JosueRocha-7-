@@ -4,6 +4,8 @@ MagoSlytherin::MagoSlytherin()
 {
 }
 
+
+
 MagoSlytherin::~MagoSlytherin()
 {
 }

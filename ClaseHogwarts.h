@@ -11,14 +11,15 @@ class ClaseHogwarts
 {
 	public:
 		ClaseHogwarts();
+		ClaseHogwarts(vector <MagoSlytherin*> ,vector <MagoHufflepuff*> ,	vector <MagoGryffindor*>,vector <MagoRavenclaw*>);
 		~ClaseHogwarts();
 		void promedio_habilidades_por_casa();
 	protected:
 		int year;
-		vector <MagoSlytherin> magos_slytherin;
-		vector <MagoHufflepuff> magos_hufflepuff;
-		vector <MagoGryffindor> magos_gryffindor;
-		vector <MagoRavenclaw> magos_ravenclaw;
+		vector <MagoSlytherin*> magos_slytherin;
+		vector <MagoHufflepuff*> magos_hufflepuff;
+		vector <MagoGryffindor*> magos_gryffindor;
+		vector <MagoRavenclaw*> magos_ravenclaw;
 		
 };
 
