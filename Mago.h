@@ -6,6 +6,7 @@ class Mago
 	public:
 		Mago();
 		~Mago();
+		
 	protected:
 		int astucia;
 		int inteligencia;

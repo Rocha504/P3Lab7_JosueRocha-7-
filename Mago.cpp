@@ -2,6 +2,7 @@
 
 Mago::Mago()
 {
+	
 }
 
 Mago::~Mago()

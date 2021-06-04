@@ -1,7 +1,54 @@
 #include <iostream>
+using std::endl;
+using std::cout;
+using std::cin;
+#include "Mago.h"
+#include "MagoSlytherin.h"
+#include "MagoRavenclaw.h"
+#include "MagoGryffindor.h"
+#include "MagoHufflepuff.h"
+#include <vector>
+using std::vector;
+#include <stdlib.h>     
+#include <time.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+vector <Mago*> generar();
 
 int main(int argc, char** argv) {
+	
+	
 	return 0;
+}
+
+vector <Mago*> generar(){
+	
+	vector <Mago*> magos;
+    srand( (unsigned)time( NULL ) );
+	
+    for (int i = 0; i < 20; i++) 
+    {
+        float asignacion=(float) rand()/RAND_MAX;
+        if(asignacion<0.25){
+        	MagoSlytherin* ms = new MagoSlytherin();
+        	magos.push_back(ms);
+		}
+		else
+			if(asignacion>0.25 && asignacion<0.5){
+				MagoRavenclaw* mr = new MagoRavenclaw();
+				magos.push_back(mr);
+			}
+		else
+			if(asignacion>0.5 && asignacion<0.75){
+				MagoHufflepuff* mh = new MagoHufflepuff();
+				magos.push_back(mh);
+			}
+		else
+			if(asignacion>0.75){
+				MagoGryffindor* mg = new MagoGryffindor();
+				magos.push_back(mg);
+			}
+    }
+    return magos;
+ 
+	 
 }
