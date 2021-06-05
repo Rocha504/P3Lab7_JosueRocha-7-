@@ -11,6 +11,7 @@ class MagoGryffindor : public Mago
 		MagoGryffindor();
 		~MagoGryffindor();
 		string Tostring();
+		void setAtrevimiento(int);
 		
 	protected:
 		int atrevimiento;

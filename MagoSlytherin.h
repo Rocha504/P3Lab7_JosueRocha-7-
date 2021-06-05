@@ -9,7 +9,7 @@ class MagoSlytherin : public Mago
 	public:
 		MagoSlytherin();
 		~MagoSlytherin();
-		
+		void setLiderazgo(int);
 	protected:
 		int liderazgo;
 };

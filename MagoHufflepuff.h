@@ -10,6 +10,7 @@ class MagoHufflepuff : public Mago
 	public:
 		MagoHufflepuff();
 		~MagoHufflepuff();
+		void setPaciencia(int);
 	protected:
 		int paciencia;
 };

@@ -9,6 +9,10 @@ class Mago
 		Mago();
 		~Mago();
 		virtual string Tostring();
+		void setAstucia(int);
+		void setLealtad(int);
+		void setInteligencia(int);
+		void setValentia(int);
 		
 	protected:
 		int astucia;

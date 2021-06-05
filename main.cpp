@@ -17,6 +17,7 @@ using std::vector;
 vector <Mago*> generar();
 
 int main(int argc, char** argv) {
+	
 	SombreroClasificador* sombrerito=new SombreroClasificador();
 	vector<Mago*> lista=generar();
 	int year;

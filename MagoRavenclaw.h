@@ -10,6 +10,7 @@ class MagoRavenclaw : public Mago
 	public:
 		MagoRavenclaw();
 		~MagoRavenclaw();
+		void setCreatividad(int);
 	protected:
 		int creatividad;
 };
